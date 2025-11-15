@@ -1,7 +1,7 @@
 {
   "name": "enquirer-fixed",
   "description": "Fixed version of enquirer which supports ts typify and custom prompt classed",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "homepage": "enquirer-fixed",
   "license": "MIT",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
