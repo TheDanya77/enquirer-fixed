@@ -1,8 +1,10 @@
 import { EventEmitter } from "events";
 
+export type BaseTypes = ArrayTypes | StringTypes | NumberTypes;
+
 interface BasePromptOptions {
     name: string;
-    type: ArrayTypes | StringTypes | NumberTypes;
+    type: BaseTypes
     message: string | (() => string | Promise<string>);
 
     // UI customization
