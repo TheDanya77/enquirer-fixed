@@ -218,7 +218,7 @@ declare namespace Enquirer {
 
         render(): void {}
         run(): Promise<T> {
-            return Promise.resolve(this.value);
+            return Promise.resolve(this.clientValue);
         }
 
         submit(): void {}
