@@ -1,9 +1,9 @@
 {
-  "name": "enquirer",
+  "name": "enquirer-fixed",
   "description": "Fixed version of enquirer which supports ts typify and custom prompt classed",
   "version": "1.0.0",
-  "homepage": "https://github.com/TheDanya77/enquirer-fixed",
-  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage": "enquirer-fixed",
+  "author": "Danya Nesterenko (https://github.com/TheDanya77)",
   "contributors": [
     "Danya Nesterenko (https://github.com/TheDanya77)"
   ],
