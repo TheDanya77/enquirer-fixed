@@ -2,7 +2,7 @@ import { EventEmitter } from "events";
 
 interface BasePromptOptions {
     name: string;
-    type: string;
+    type: ArrayTypes | StringTypes | NumberTypes;
     message: string | (() => string | Promise<string>);
 
     // UI customization
@@ -83,8 +83,10 @@ export interface StringPromptOptions extends BasePromptOptions {
   multiline?: boolean
 }
 
+export type NumberTypes = "numeral"
+
 export interface NumberPromptOptions extends BasePromptOptions {
-  type: 'numeral'
+  type: NumberTypes
   min?: number
   max?: number
   delay?: number
