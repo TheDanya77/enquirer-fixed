@@ -1,14 +1,94 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "enquirer",
+  "description": "Fixed version of enquirer which supports ts typify and custom prompt classed",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "homepage": "https://github.com/TheDanya77/enquirer-fixed",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "Danya Nesterenko (https://github.com/TheDanya77)"
+  ],
+  "repository": "https://github.com/TheDanya77/enquirer-fixed",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.6"
+  },
   "scripts": {
-    "build": "tsc"
+    "test": "mocha && tsc -p ./test/types",
+    "cover": "nyc --reporter=text --reporter=html mocha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "strip-ansi": "^6.0.1"
+  },
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "@types/node": "^8",
+    "gulp-format-md": "^2.0.0",
+    "inquirer": "^6.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "prompts": "^1.2.1",
+    "time-require": "github:jonschlinkert/time-require",
+    "typescript": "^3.1.6"
   },
-  "private": true
+  "keywords": [
+    "answer",
+    "answers",
+    "ask",
+    "base",
+    "cli",
+    "command",
+    "command-line",
+    "confirm",
+    "enquirer",
+    "generator",
+    "generate",
+    "hyper",
+    "input",
+    "inquire",
+    "inquirer",
+    "interface",
+    "iterm",
+    "javascript",
+    "node",
+    "nodejs",
+    "prompt",
+    "prompts",
+    "promptly",
+    "question",
+    "readline",
+    "scaffold",
+    "scaffolding",
+    "scaffolder",
+    "stdin",
+    "stdout",
+    "terminal",
+    "tty",
+    "ui",
+    "yeoman",
+    "yo",
+    "zsh"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": false,
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "helpers": [
+      "./docs/helpers.js"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "inquirer",
+      "prompt-skeleton"
+    ]
+  }
 }
